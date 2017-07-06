@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/areaJogavel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_1"
+    tools:context="pt.ipleiria.estg.dei.santos.ruben.angrybirdsblast.MainActivity">
+
+    <view
+        android:id="@+id/objetivos"
+        class="pt.ipleiria.estg.dei.gridcomponent.GridComponent"
+        id="@+id/view"
+        layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowOrderPreserved="true"
+        app:backgroundColor="@android:color/transparent"
+        app:numberOfRows="2"
+        app:showGridLines="false" />
+
+    <view
+        android:id="@+id/grid"
+        class="pt.ipleiria.estg.dei.gridcomponent.GridComponent"
+        id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:backgroundColor="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:showGridLines="false" />
+</LinearLayout>
